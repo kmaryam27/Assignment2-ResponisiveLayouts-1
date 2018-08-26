@@ -1,0 +1,161 @@
+body{
+    display: grid;
+    height: 100%;
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr;
+    background-color: rgb(34, 33, 33);
+}
+
+header{
+    padding: 20px;
+    background-color: rgb(34, 33, 33);
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+header h2{
+    font-family: 'Sonsie One', cursive;
+    color: aliceblue;
+    padding-top: 10px;
+}
+
+main{
+    margin: 10px;
+}
+
+#box{
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-columns: 1fr;
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.imageDiv{
+    display: grid;
+    height: 100%;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 50px 1fr;
+    grid-row: span 1;
+    grid-column: span 1;
+    background-color: white;
+}
+
+.imgHearder{
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+} 
+
+
+.imgClass{
+    width: 100%;
+    height: 200px;   
+    justify-content: center;
+    text-align: center;
+    object-fit: cover;
+    border-bottom: 2px solid black;
+}
+
+.Boats{
+    width:100%;
+    height:200px;
+    background-image:url('images/lake.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+.Buildings{
+    width:100%;
+    height:200px;
+    background-image:url('images/empire.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+.Human{
+    width:100%;
+    height:200px;
+    background-image:url('images/person.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+.Tree{
+    width:100%;
+    height:200px;
+    background-image:url('images/tree.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+.Architecture{
+    width:100%;
+    height:200px;
+    background-image:url('images/geo.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+.Sand{
+    width:100%;
+    height:200px;
+    background-image:url('images/sand.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+.Bridge{
+    width:100%;
+    height:200px;
+    background-image:url('images/bridge.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+.Camera{
+    width:100%;
+    height:200px;
+    background-image:url('images/lens.jpg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+@media only screen and (min-width: 600px) {
+
+    main{
+        margin: 50px;
+    }
+    
+    #box{
+        display: grid;
+        height: 100%;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .imageDiv{
+        border-right: 2px solid black;
+    }
+    
+    
+}
